@@ -1,0 +1,27 @@
+logging:
+  level:
+    root: INFO
+    org.apache.http: INFO
+    org.springframework: INFO
+    br.eti.archanjo: DEBUG
+    org.keycloak: DEBUG
+spring:
+  redis:
+    host: vm.services
+    port: 6379
+    database: 13
+keycloak:
+  auth-server-url: https://iam.archanjo.eti.br/auth
+  bearer-only: true
+  realm: websockettest
+  ssl-required: none
+  resource: api
+  confidential-port: 0
+  verify-token-audience: true
+  use-resource-role-mappings: true
+config:
+  rabbit-mq:
+    username: fabricio
+    password: q1w2e3
+    host: vm.services
+    port: 61613
