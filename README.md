@@ -2,7 +2,10 @@
 This project was developed to understand how websocket works with IAM and integrated with Spring Security.
 
 ## Goals
-We need to handle an million simultaneous connections and stateless
+The main goal is create one chat that handle an millions simultaneous connections, distributed and spread on multiples 
+servers using stateless authentication with JWT.
+
+Once this project implemeted new ideas for stateless connection using websocket could be used.
 
 ## Requirements
 An minimum Spring Boot knowledgement.
